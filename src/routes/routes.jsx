@@ -1,18 +1,11 @@
-import { useEffect } from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import Header from '../components/header'
-import Favorites from '../pages/favorites'
-import Home from '../pages/home'
-import Movies from '../pages/movies'
-import Series from '../pages/series'
-import axios from 'axios'
+import Favorites from '../pages/Favorites'
+import Home from '../pages/Home'
+import Movies from '../pages/Movies'
+import Series from '../pages/Series'
 import StandardPage from '../pages/standardPage'
 
 function MyRoutes() {
-  
-
-  
-
   return (
     <BrowserRouter>
       <Routes>

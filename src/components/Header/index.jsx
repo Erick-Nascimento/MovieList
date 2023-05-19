@@ -1,9 +1,9 @@
 import React from 'react'
-import Nav from './Nav/nav'
+import Nav from './Nav'
 
 function Header() {
   return (
-    <header className="bg-[#161616] text-white opacity-50">
+    <header className="bg-black text-white opacity-50">
       <Nav />
     </header>
   )
