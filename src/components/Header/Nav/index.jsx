@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom'
 
 function Nav() {
   return (
-    <nav>
+    <nav className="flex gap-8">
       <Link to="/">
         <span>Home</span>
       </Link>
