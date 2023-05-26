@@ -1,8 +1,14 @@
 function IconButton({ text, icon, color }) {
+  const colors = {
+    red: 'bg-[#E00E0E]',
+    black: 'bg-[#161616]',
+  }
+
+  console.log(colors[color])
   return (
     <>
       <button
-        className={`flex items-center gap-2 uppercase text-xs font-semibold bg-[${color}] text-white py-3 px-8 rounded-full`}
+        className={`flex items-center gap-2 uppercase text-xs font-semibold ${colors[color]} text-white py-3 px-8 rounded-full`}
       >
         <img src={icon} alt="" />
         {text}

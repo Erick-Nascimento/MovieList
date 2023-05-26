@@ -15,12 +15,8 @@ function HeroContent() {
         </span>
       </div>
       <div className="flex gap-6">
-        <IconButton icon={playIcon} text={'Assistir'} color={'#E00E0E'} />
-        <IconButton
-          icon={infoIcon}
-          text={'Mais Informações'}
-          color={'#161616'}
-        />
+        <IconButton icon={playIcon} text={'Assistir'} color={'red'} />
+        <IconButton icon={infoIcon} text={'Mais Informações'} color={'black'} />
       </div>
     </div>
   )
