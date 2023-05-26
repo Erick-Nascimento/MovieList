@@ -4,7 +4,6 @@ function IconButton({ text, icon, color }) {
     black: 'bg-[#161616]',
   }
 
-  console.log(colors[color])
   return (
     <>
       <button
