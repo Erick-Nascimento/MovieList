@@ -1,15 +1,14 @@
 import { useState } from 'react'
 import { api } from '../../services/axios'
+import { fetchMovies } from '../../services/movies'
 
 function useMovies() {
   const [listMovies, setListMovies] = useState([])
 
-  const getMovies = async () => {
-    const API_KEY = import.meta.env.VITE_API_KEY
+  const getMovies = async (genre) => {
     try {
-      const response = await api.get(`/movie/550?${API_KEY}`)
-      setListMovies(response)
-      console.log(response)
+      const result = await fetchMovies(genre)
+      setListMovies(result)
     } catch (error) {
       console.log(error)
     }
