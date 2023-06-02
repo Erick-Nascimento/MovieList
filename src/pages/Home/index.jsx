@@ -5,7 +5,8 @@ function Home() {
   return (
     <>
       <Hero />
-      <MovieSection title={'Ação e Aventura'} />
+      <MovieSection title={'Ação e Aventura'} genre={28} />
+      <MovieSection title={'Comédia'} genre={35} />
     </>
   )
 }
