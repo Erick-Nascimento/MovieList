@@ -1,4 +1,4 @@
-import PlusIcon from '../../../../public/assets/plusIcon.png'
+import PlusIcon from '/assets/plusIcon.png'
 
 function ModalCard({ image, releaseDate }) {
   const baseUrlImage = 'https://image.tmdb.org/t/p/w500'

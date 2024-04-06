@@ -1,7 +1,7 @@
 import IconButton from '../../IconButton'
 
-import infoIcon from '../../../../public/assets/infoIcon.png'
-import playIcon from '../../../../public/assets/playIcon.png'
+import infoIcon from '/assets/infoIcon.png'
+import playIcon from '/assets/playIcon.png'
 import { Link } from 'react-router-dom'
 import useTrailer from '../../../commons/hooks/useTrailer'
 import { useContext, useEffect } from 'react'
