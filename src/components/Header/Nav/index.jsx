@@ -6,14 +6,11 @@ function Nav() {
       <Link to="/">
         <span>Home</span>
       </Link>
-      <Link to="/movies">
-        <span>Filmes</span>
-      </Link>
-      <Link to="/series">
-        <span>Séries</span>
-      </Link>
       <Link to="/favorites">
         <span>Favoritos</span>
+      </Link>
+      <Link to="/verdepois">
+        <span>Ver Depois</span>
       </Link>
     </nav>
   )

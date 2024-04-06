@@ -1,22 +1,31 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Favorites from '../pages/Favorites'
 import Home from '../pages/Home'
-import Movies from '../pages/Movies'
-import Series from '../pages/Series'
+import VerDepois from '../pages/VerDepois'
 import StandardPage from '../pages/standardPage'
+import ModalContextProvider from '../commons/context/openModal'
+import FavoritesContextProvider from '../commons/context/favoriteMovies'
+import Movie from '../pages/Movie'
+import SeeLaterListProvider from '../commons/context/seeLater'
 
 function MyRoutes() {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<StandardPage />}>
-          <Route index element={<Home />} />
-          <Route path="movies" element={<Movies />} />
-          <Route path="series" element={<Series />} />
-          <Route path="favorites" element={<Favorites />} />
-        </Route>
-      </Routes>
-    </BrowserRouter>
+    <ModalContextProvider>
+      <FavoritesContextProvider>
+        <SeeLaterListProvider>
+          <BrowserRouter>
+            <Routes>
+              <Route path="/" element={<StandardPage />}>
+                <Route index element={<Home />} />
+                <Route path="verdepois" element={<VerDepois />} />
+                <Route path="favorites" element={<Favorites />} />
+              </Route>
+              <Route path="/movie" element={<Movie />}></Route>
+            </Routes>
+          </BrowserRouter>
+        </SeeLaterListProvider>
+      </FavoritesContextProvider>
+    </ModalContextProvider>
   )
 }
 
