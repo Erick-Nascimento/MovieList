@@ -1,8 +1,8 @@
 import { useRef } from 'react'
 import { useClickOutsideListener } from '../../commons/hooks/useClickOutsideListener'
-import LogoutIcon from '../../assets/logout.png'
-import ConfigIcon from '../../assets/config.png'
-import ProfileIcon from '../../assets/user.png'
+import LogoutIcon from '../../../public/assets/logout.png'
+import ConfigIcon from '../../../public/assets/config.png'
+import ProfileIcon from '../../../public/assets/user.png'
 import DropdownMenuItem from './DropdownMenuItem/DropdownMenuItem'
 
 function DropdownMenu({ openerRef, setOpen }) {
