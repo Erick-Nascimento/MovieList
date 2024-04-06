@@ -2,7 +2,7 @@ import React from 'react'
 import Nav from './Nav'
 import Logo from '/assets/popcorn-logo.png'
 import Bell from '/assets/bell.png'
-import SearchIcon from '/assets/Search.png'
+import SearchIcon from '/assets/search.png'
 import UserPhoto from './UserPhoto'
 import { Link } from 'react-router-dom'
 
