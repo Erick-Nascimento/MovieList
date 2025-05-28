@@ -1,5 +1,5 @@
 import { useEffect } from 'react'
-import HeroImg from '/assets/stranger.jpg'
+import HeroImg from '../../assets/stranger.jpg'
 import Herocontent from '../Hero/HeroContent/index'
 import UseUpcomingMovies from '../../commons/hooks/useUpcomingMovies'
 

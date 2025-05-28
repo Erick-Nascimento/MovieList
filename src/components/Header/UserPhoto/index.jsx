@@ -1,5 +1,5 @@
-import User from '/assets/user.jpeg'
-import Arrow from '/assets/arrow.png'
+import User from '../../../assets/user.jpeg'
+import Arrow from '../../../assets/arrow.png'
 import { useRef, useState } from 'react'
 import DropdownMenu from '../../DropdownMenu'
 

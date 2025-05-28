@@ -1,4 +1,4 @@
-import PopcornImg from '/assets/empty.png'
+import PopcornImg from '../../assets/empty.png'
 
 function EmptyList({ text }) {
   return (

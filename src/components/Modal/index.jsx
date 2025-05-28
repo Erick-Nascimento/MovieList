@@ -1,15 +1,15 @@
 import { useEffect, useContext, useState } from 'react'
 import IconButton from '../IconButton'
 import ModalCard from './modalCard'
-import PlayIcon from '/assets/playIcon.png'
-import HearthIcon from '/assets/hearthIcon.png'
-import FilledHearthIcon from '/assets/filledHearthIcon.png'
-import PlusIcon from '/assets/plusIcon.png'
-import RemoveIcon from '/assets/removeIcon.png'
+import PlayIcon from '../../assets/playIcon.png'
+import HearthIcon from '../../assets/hearthIcon.png'
+import FilledHearthIcon from '../../assets/filledHearthIcon.png'
+import PlusIcon from '../../assets/plusIcon.png'
+import RemoveIcon from '../../assets/removeIcon.png'
 import useSpecificMovies from '../../commons/hooks/useSpecificMovies'
 import Skeleton from 'react-loading-skeleton'
 import 'react-loading-skeleton/dist/skeleton.css'
-import Banner from '/assets/banner.jpg'
+import Banner from '../../assets/banner.jpg'
 import useRelatedMovies from '../../commons/hooks/useRelatedMovies'
 import useCast from '../../commons/hooks/useCast'
 import { FavoriteMovies } from '../../commons/context/favoriteMovies'
@@ -89,7 +89,11 @@ function Modal({ toggleFunction, movieId }) {
       <div className="bg-[#161616] rounded-md z-50 text-white max-w-2xl max-h-[90vh] fixed overflow-hidden">
         <div className="relative w-full max-h-64">
           {loading ? (
-            <Skeleton count={10} />
+            <Skeleton
+              height="100%"
+              width="100%"
+              containerClassName="w-full h-80 max-h-64"
+            />
           ) : (
             <img
               className="w-full h-80 max-h-64 object-cover"

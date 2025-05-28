@@ -1,8 +1,8 @@
 import React from 'react'
 import Nav from './Nav'
-import Logo from '/assets/popcornLogo.png'
-import Bell from '/assets/bell.png'
-import SearchIcon from '/assets/search.png'
+import Logo from '../../assets/popcornLogo.png'
+import Bell from '../../assets/bell.png'
+import SearchIcon from '../../assets/search.png'
 import UserPhoto from './UserPhoto'
 import { Link } from 'react-router-dom'
 
